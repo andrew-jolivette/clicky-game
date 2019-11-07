@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Laharl",
+    "image": "https://vignette.wikia.nocookie.net/disgaea/images/1/1f/Laharlface_d2.jpg/revision/latest?cb=20100616122252&path-prefix=en"
+  },
+  {
+    "id": 2,
+    "name": "Etna",
+    "image": "https://vignette.wikia.nocookie.net/disgaea/images/3/35/Etnaportrait_d3.jpg/revision/latest?cb=20100616173558&path-prefix=en"
+  },
+  {
+    "id": 3,
+    "name": "Flonne",
+    "image": "https://vignette.wikia.nocookie.net/disgaea/images/9/9f/Flonneportrait-D3.jpg/revision/latest?cb=20090713011801&path-prefix=en"
+  },
+  {
+    "id": 4,
+    "name": "Adell",
+    "image": "https://vignette.wikia.nocookie.net/disgaea/images/b/ba/Adell.jpg/revision/latest?cb=20100801073453&path-prefix=en"
+  },
+  {
+    "id": 5,
+    "name": "Rozalyn",
+    "image": "https://vignette.wikia.nocookie.net/disgaea/images/7/71/RozalinD3.jpg/revision/latest?cb=20100801153902&path-prefix=en"
+  },
+  {
+    "id": 6,
+    "name": "Mao",
+    "image": "https://vignette.wikia.nocookie.net/disgaea/images/6/67/Mao_d2p.jpg/revision/latest?cb=20100803192507&path-prefix=en"
+  },
+  {
+    "id": 7,
+    "name": "Raspberyl",
+    "image": "https://vignette.wikia.nocookie.net/disgaea/images/b/b3/D3_Raspberyl_Portrait.png/revision/latest?cb=20131102050835&path-prefix=en"
+  },
+  {
+    "id": 8,
+    "name": "Valvatorez",
+    "image": "https://vignette.wikia.nocookie.net/disgaea/images/0/02/Valvatorez_Portrait.jpg/revision/latest?cb=20110721173821&path-prefix=en"
+  },
+  {
+    "id": 9,
+    "name": "Fenrich",
+    "image": "https://vignette.wikia.nocookie.net/disgaea/images/b/b6/Fenrich_Portrait.jpg/revision/latest?cb=20110721174016&path-prefix=en"
+  },
+  {
+    "id": 10,
+    "name": "Fuka",
+    "image": "https://vignette.wikia.nocookie.net/disgaea/images/1/12/Fuka_Portrait.jpg/revision/latest?cb=20110721174031&path-prefix=en"
+  },
+  {
+    "id": 11,
+    "name": "Killia",
+    "image": "https://vignette.wikia.nocookie.net/disgaea/images/4/4f/Disgaea5-KilliaMugshot.png/revision/latest?cb=20190721134517&path-prefix=en"
+  },
+  {
+    "id": 12,
+    "name": "Seraphina",
+    "image": "https://vignette.wikia.nocookie.net/disgaea/images/b/b1/Disgaea5-SeraphinaMugshot.png/revision/latest?cb=20190721134543&path-prefix=en"
+  }
+]
