@@ -8,6 +8,7 @@ function Card(props) {
       <Image 
         alt={props.name} 
         src={props.image} 
+        onClick={ () => props.handleClick()}
         thumbnail 
         className='gameCard'
       />

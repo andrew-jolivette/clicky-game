@@ -14,18 +14,30 @@ class App extends Component {
   state = {
     score: 0,
     highScore: 0,
+    feedback: 'Click An Image To Play',
     cards
   }
   
+  pointCheck = () => {
+    const currentScore = this.state.score;
+    this.setState({ score: currentScore + 1 })
+    // console.log("Hit!")
+  }
+
   renderBoard = () => {
+    const cardDeck = [...this.state.cards];
+    cardDeck.sort(() => Math.random() - 0.5);
+
+    console.log(cardDeck)
     return (
-        this.state.cards.map(card => {
+        cardDeck.map(card => {
           return (
-            <Col xs={3}>
+            <Col xs={3} key={card.id}>
               <Card
                 id={card.id}
                 name={card.name}
                 image={card.image}
+                handleClick={this.pointCheck}
               />
             </Col>
           )
@@ -36,7 +48,10 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Nav />
+        <Nav
+          score={this.state.score}
+          highScore={this.state.highScore}
+          feedback={this.state.feedback} />
         <Instructions />
         <Container>
           <Row className="justify-content-sm-center">
