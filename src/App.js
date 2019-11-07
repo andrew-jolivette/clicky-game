@@ -14,21 +14,39 @@ class App extends Component {
   state = {
     score: 0,
     highScore: 0,
+    picks: [],
     feedback: 'Click An Image To Play',
     cards
   }
   
-  pointCheck = () => {
-    const currentScore = this.state.score;
-    this.setState({ score: currentScore + 1 })
-    // console.log("Hit!")
+  pointCheck = id => {
+    
+    if (this.state.picks.includes(id)) {
+      if (this.state.highScore < this.state.score) {
+        this.setState({ 
+          highScore: this.state.score
+        })
+      }
+      this.setState({
+        score: 0,
+        feedback: 'You Guessed Incorrectly',
+        picks: []
+      })
+    } else {
+      this.setState({
+        score: this.state.score + 1,
+        feedback: 'You Guessed Correctly',
+        picks: [...this.state.picks, id]
+      })
+    }
   }
 
-  renderBoard = () => {
+  renderBoard() {
     const cardDeck = [...this.state.cards];
+
+    // this is a lazy method of "shuffling":
     cardDeck.sort(() => Math.random() - 0.5);
 
-    console.log(cardDeck)
     return (
         cardDeck.map(card => {
           return (
