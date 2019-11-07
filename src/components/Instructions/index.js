@@ -5,11 +5,10 @@ import Container from 'react-bootstrap/Container';
 function Instructions() {
   return (
     <Jumbotron fluid>
-      <Container>
-        <h1>Fluid jumbotron</h1>
+      <Container className='text-center'>
+        <h1>Instructions</h1>
         <p>
-          This is a modified jumbotron that occupies the entire horizontal space of
-          its parent.
+          Try to see how many characters you can click on with out clicking on the same one twice!
         </p>
       </Container>
     </Jumbotron>

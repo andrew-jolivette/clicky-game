@@ -11,31 +11,40 @@ import Card from './components/Card';
 import cards from './cards.json';
 
 class App extends Component {
-  state = { 
+  state = {
     score: 0,
     highScore: 0,
     cards
   }
+  
+  renderBoard = () => {
+    return (
+        this.state.cards.map(card => {
+          return (
+            <Col xs={3}>
+              <Card
+                id={card.id}
+                name={card.name}
+                image={card.image}
+              />
+            </Col>
+          )
+        })
+    )
+  }
+
   render() {
     return (
       <div>
         <Nav />
         <Instructions />
         <Container>
-          <Row>
-        {
-          this.state.cards.map(card => {
-            return (
-              <Col xs={3}>
-                <Card 
-                  id={card.id}
-                  name={card.name}
-                  image={card.image}
-                />
-              </Col>
-            )
-          })
-        }
+          <Row className="justify-content-sm-center">
+            <Col xs={10}>
+              <Row noGutters={true}>
+                {this.renderBoard()}
+              </Row>
+            </Col>
           </Row>
         </Container>
       </div>
